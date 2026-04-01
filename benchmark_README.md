@@ -68,22 +68,24 @@ python benchmark.py --model bert-base-uncased \
 ## Sample output
 
 ```
-[+] Loading tokenizer : bert-base-uncased
-[+] Loading model     : bert-base-uncased
+[+] Device            : CPU
+[+] Loading tokenizer : nlpaueb/bert-base-greek-uncased-v1
+[+] Loading model     : katrjohn/TinyGreekNewsBERT
 
-[+] Profiling FLOPs (seq_len=512) ...
+[+] Profiling FLOPs (seq_len=512, always on CPU) ...
 [+] Benchmarking latency (10,000 runs, 20 warm-up) ...
 
 ==================================================
-  bert-base-uncased  |  CPU Benchmark Results
+  TinyGreekNewsBERT  |  CPU Benchmark Results
 ==================================================
-  Parameters  :    109.5 M
-  MACs        :    11.17 GMac
-  FLOPs       :    22.35 GFLOPs  (2 × MACs)
+  Parameters  :     13.9 M
+  MACs        :     3.22 GMac
+  FLOPs       :     6.45 GFLOPs  (2 × MACs)
 ==================================================
+  Device      : CPU
   Runs        :   10,000
-  Mean latency:    52.40 ms
-  p95  latency:    54.80 ms
+  Mean latency:    14.00 ms
+  p95  latency:    16.20 ms
 ==================================================
 ```
 
