@@ -1,6 +1,6 @@
 # bert-cpu-benchmark
 
-A lightweight, generic CPU inference benchmark for any **BERT-family encoder model** on Hugging Face.
+A lightweight, CPU inference benchmark for any **BERT-family encoder model** on Hugging Face.
 
 Measures parameters, MACs, FLOPs, mean latency, and p95 latency — all on CPU, no GPU required.
 
