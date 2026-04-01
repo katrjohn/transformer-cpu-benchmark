@@ -19,6 +19,8 @@ Measures parameters, MACs, FLOPs, mean latency, and p95 latency — all on CPU, 
 > FLOPs are **hardware-agnostic** — they measure the computational cost of the model architecture, not the speed of the machine. Latency is hardware-dependent.
 
 ---
+## A live demo of the benchmark can be tested [here](https://huggingface.co/spaces/katrjohn/transformer-cpu-benchmark)
+---
 
 ## Requirements
 
