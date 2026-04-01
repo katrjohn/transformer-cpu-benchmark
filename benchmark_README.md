@@ -121,7 +121,9 @@ Works with any `AutoModel`-loadable **encoder-only** (BERT-family) model from Hu
 > **Note:** Decoder models (GPT-2, LLaMA) and encoder-decoder models (T5, BART) are not supported — they require different input handling and forward pass logic.
 
 ---
-
+## Additional Devices
+GPU benchmarking supported via `--device cuda` but CPU is the primary target for lightweight deployment scenarios. 
+---
 ## Methodology
 
 - FLOPs profiled via the [DeepSpeed FLOPs Profiler](https://www.deepspeed.ai/tutorials/flops-profiler/) on a synthetic input at the specified `seq_len`.
