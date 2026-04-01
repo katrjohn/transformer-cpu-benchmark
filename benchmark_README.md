@@ -93,11 +93,12 @@ python benchmark.py --model bert-base-uncased \
 
 Results measured on CPU at `seq_len=512`, 10 000 runs, using [`katrjohn/TinyGreekNewsBERT`](https://huggingface.co/katrjohn/TinyGreekNewsBERT) as the primary model under evaluation.
 
-| Model | Params | MACs | FLOPs | Mean latency | p95 latency |
-|---|---|---|---|---|---|
-| [`katrjohn/TinyGreekNewsBERT`](https://huggingface.co/katrjohn/TinyGreekNewsBERT) | **14.1 M** | **3.23 GMac** | **6.46 GFLOPs** | **13.59 ms** | **14.50 ms** |
-| [`katrjohn/XLMRobertaGreekNews`](https://huggingface.co/katrjohn/XLMRobertaGreekNews) | 278.7 M | 48.33 GMac | 96.71 GFLOPs | 140.93 ms | 148.68 ms |
-| [`microsoft/deberta-v3-base`](https://huggingface.co/microsoft/deberta-v3-base) | 183.8 M | 60.40 GMac | 120.88 GFLOPs | 245.55 ms | 261.96 ms |
+| Model | Params | MACs | FLOPs | Mean latency | p95 latency | Model size|
+|---|---|---|---|---|---|---|
+| [`katrjohn/TinyGreekNewsBERT`](https://huggingface.co/katrjohn/TinyGreekNewsBERT) | **14.1 M** | **3.23 GMac** | **6.46 GFLOPs** | **14.00 ms** | **16.20 ms** | **50mb** |
+| XLM-Roberta-base | 278.7 M | 48.33 GMac | 96.71 GFLOPs | 161.40 ms | 167.00 ms | 1030mb |
+| mBert | 183.8 M | 60.40 GMac | 120.88 GFLOPs | 160.00 ms | 166.90 ms | 680 mb |
+| GreekBert | 112.9 M | 48.32 GMac | 96.69 GFLOPs | 151.60 ms | 158.20 ms | 433 mb |
 
 > TinyGreekNewsBERT achieves **~20× fewer FLOPs** and **~10× lower CPU latency** than XLM-RoBERTa, while remaining within 5 F1 points on NER. See the [full paper](https://ieeexplore.ieee.org/document/11148234) for the complete model comparison.
 
