@@ -99,7 +99,7 @@ Results measured on CPU at `seq_len=512`, 10 000 runs, using [`katrjohn/TinyGree
 | [`katrjohn/XLMRobertaGreekNews`](https://huggingface.co/katrjohn/XLMRobertaGreekNews) | 278.7 M | 48.33 GMac | 96.71 GFLOPs | 140.93 ms | 148.68 ms |
 | [`microsoft/deberta-v3-base`](https://huggingface.co/microsoft/deberta-v3-base) | 183.8 M | 60.40 GMac | 120.88 GFLOPs | 245.55 ms | 261.96 ms |
 
-> TinyGreekNewsBERT achieves **~20× fewer FLOPs** and **~10× lower CPU latency** than XLM-RoBERTa, while remaining within 5 F1 points on NER. See the [full paper](10.1109/ACCESS.2025.3605709) for the complete model comparison.
+> TinyGreekNewsBERT achieves **~20× fewer FLOPs** and **~10× lower CPU latency** than XLM-RoBERTa, while remaining within 5 F1 points on NER. See the [full paper](https://ieeexplore.ieee.org/document/11148234) for the complete model comparison.
 
 ---
 
