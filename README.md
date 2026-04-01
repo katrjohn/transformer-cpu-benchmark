@@ -19,7 +19,7 @@ Measures parameters, MACs, FLOPs, mean latency, and p95 latency — all on CPU, 
 > FLOPs are **hardware-agnostic** — they measure the computational cost of the model architecture, not the speed of the machine. Latency is hardware-dependent.
 
 ---
-## A live demo of the benchmark can be tested [here](https://huggingface.co/spaces/katrjohn/transformer-cpu-benchmark)
+## live demo of the benchmark can be tested [![Open in Spaces](https://huggingface.co/datasets/huggingface/badges/resolve/main/open-in-hf-spaces-lg.svg)](https://huggingface.co/spaces/katrjohn/transformer-cpu-benchmark)
 ---
 
 ## Requirements
@@ -97,7 +97,7 @@ python benchmark.py --model bert-base-uncased \
 
 Results measured on CPU at `seq_len=512`, 10 000 runs, using [`katrjohn/TinyGreekNewsBERT`](https://huggingface.co/katrjohn/TinyGreekNewsBERT) as the primary model under evaluation.
 
-| Model | Params | MACs | FLOPs | Mean latency | p95 latency | Model size|
+| Model | Params | MACs | FLOPs | Mean latency | p95 latency | Model size |
 |---|---|---|---|---|---|---|
 | [`katrjohn/TinyGreekNewsBERT`](https://huggingface.co/katrjohn/TinyGreekNewsBERT) | **14.1 M** | **3.23 GMac** | **6.46 GFLOPs** | **14.00 ms** | **16.20 ms** | **50mb** |
 | XLM-Roberta-base | 278.7 M | 48.33 GMac | 96.71 GFLOPs | 161.40 ms | 167.00 ms | 1030mb |
