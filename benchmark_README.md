@@ -100,7 +100,7 @@ Results measured on CPU at `seq_len=512`, 10 000 runs, using [`katrjohn/TinyGree
 | mBert | 183.8 M | 60.40 GMac | 120.88 GFLOPs | 160.00 ms | 166.90 ms | 680 mb |
 | GreekBert | 112.9 M | 48.32 GMac | 96.69 GFLOPs | 151.60 ms | 158.20 ms | 433 mb |
 
-> TinyGreekNewsBERT achieves **~20× fewer FLOPs** and **~10× lower CPU latency** than XLM-RoBERTa, while remaining within 5 F1 points on NER. See the [full paper](https://ieeexplore.ieee.org/document/11148234) for the complete model comparison.
+> See the [full paper](https://ieeexplore.ieee.org/document/11148234) for the complete model comparison.
 
 ---
 
